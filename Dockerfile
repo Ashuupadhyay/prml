@@ -6,7 +6,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file to Tomcat (rename to ROOT.war for root URL)
 
-copy medicinedonation.war/usr/local/tomcat/webapps/medicinedonation.war
+COPY medicinedonation.war/usr/local/tomcat/webapps/medicinedonation.war
 
 # Configure for Render's port
 ENV PORT 8080
