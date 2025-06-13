@@ -6,7 +6,8 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 
 # ← Add the connector to Tomcat's global lib directory
-COPY mysql-connector-java-8.4.0.jar /usr/local/tomcat/lib/
+COPY mysql-connector-j-9.2.0.jar /usr/local/tomcat/lib/
+
 # Copy your WAR file to Tomcat (rename to ROOT.war for root URL)
 COPY medicinedonation.war /usr/local/tomcat/webapps/medicinedonation.war
 
